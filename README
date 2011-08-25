@@ -1,0 +1,11 @@
+Test program to investigate ManyToMany relationships.
+
+Output:
+
+created book with id: 6
+created author with id: 6
+adding book to author.books...
+save after adding returned: true
+deleting book from author.books...
+save after deleting returned: false
+select * from BookAuthors where book = 6 : (List(BOOK, AUTHOR),List(List(6, 6)))
