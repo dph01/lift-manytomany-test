@@ -1,6 +1,9 @@
-Test program to investigate ManyToMany relationships.
+Test program to investigate ManyToMany relationships. 
+It appears that the appropriate entry join table is not being deleted when it ought to be. 
 
-Output:
+The test driver is in tagged onto the end of Boot.boot() for simplicity.
+
+Test Output:
 
 created book with id: 6
 created author with id: 6
