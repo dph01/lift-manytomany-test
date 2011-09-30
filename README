@@ -1,14 +1,3 @@
 Test program to investigate ManyToMany relationships. 
-It appears that the appropriate entry join table is not being deleted when it ought to be. 
 
-The test driver is in tagged onto the end of Boot.boot() for simplicity.
-
-Test Output:
-
-created book with id: 6
-created author with id: 6
-adding book to author.books...
-save after adding returned: true
-deleting book from author.books...
-save after deleting returned: false
-select * from BookAuthors where book = 6 : (List(BOOK, AUTHOR),List(List(6, 6)))
+execute the test: code.model.BookSuite to see the assertion failure
