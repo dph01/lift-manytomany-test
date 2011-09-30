@@ -78,12 +78,15 @@ class Boot {
     // Make a transaction span the whole HTTP request
     S.addAround(DB.buildLoanWrapper)
     
+    /*
     val book = new Book().title("War and Peace").saveMe
     println("created book with id: " + book.id.is)
     val author = new Author().firstName("Leo").saveMe
+    val author2 = new Author().firstName("Fred").saveMe
     println("created author with id: " + author.id.is)
     println("adding book to author.books...")
     author.books += book
+    author2.books += book
     val ret1 = author.save
     println("save after adding returned: " + ret1 )
     println("deleting book from author.books...")
@@ -92,5 +95,6 @@ class Boot {
     println("save after deleting returned: " + ret2 )
     val query = "select * from BookAuthors where book = "  + book.id.is
     println(query + " : " + DB.runQuery(query))
+    */
   }
 }

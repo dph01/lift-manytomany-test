@@ -30,9 +30,10 @@ object Author extends Author with LongKeyedMetaMapper[Author]{
 	override def dbTableName = "authors"
 }
 
-object BookAuthors extends BookAuthors with MetaMapper[BookAuthors]
+object BookAuthors extends BookAuthors with LongKeyedMetaMapper[BookAuthors]
 
-class BookAuthors extends Mapper[BookAuthors] {
+// class BookAuthors extends Mapper[BookAuthors]
+class BookAuthors extends LongKeyedMapper[BookAuthors] with IdPK{
 	def getSingleton = BookAuthors
 	object author extends LongMappedMapper(this, Author) 
 	object book extends LongMappedMapper(this, Book) 

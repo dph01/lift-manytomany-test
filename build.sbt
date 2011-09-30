@@ -30,7 +30,8 @@ libraryDependencies ++= {
 		// "org.eclipse.jetty" % "jetty-webapp" % "7.4.5.v20110725" % "compile,test->default" ,
 		"junit" % "junit" % "4.5" % "test",
 		"org.scala-tools.testing" %% "specs" % "1.6.6" % "test",
-		"org.scala-lang" % "scala-compiler" % "2.8.1"
+		"org.scala-lang" % "scala-compiler" % "2.8.1",
+	  "org.scalatest" % "scalatest_2.8.1" % "1.5.1" % "test"
 		// "eu.medsea.mimeutil" % "mime-util" % "2.1.3"
   	)
 }
